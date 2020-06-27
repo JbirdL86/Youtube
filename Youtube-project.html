@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/0007bfca3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Youtube</title>
+    <meta charset="UTF-8" />
+  </head>
 
-<head>
-  <!--Calling style,icons and fonts libraries-->
-  <script src="https://kit.fontawesome.com/0007bfca3c.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Adding tab title-->
-  <title>Youtube</title>
-  <meta charset="UTF-8"> 
-</head>
-
-<body>
-  <nav id="navbar" class="navstyle">
-    <!--<div id="container" class="navstyle">-->
-      <!--Left container-->
+  <body>
+    <nav id="navbar" class="navstyle">
       <div class="navstyle">
         <div class="navstyle">
           <div id="menu">
@@ -26,553 +27,730 @@
         <div class="navstyle">
           <i class="fab fa-youtube fa-2x"></i>
           <span id="youtube" class="navstyle">YouTube</span>
-        </div>    
-      </div>  
-      <!--Center container-->
+        </div>
+      </div>
       <div id="center" class="navstyle">
         <div id="searchcont" class="navstyle">
-          <input id="searchbox" type="search" placeholder="  Search">
+          <input id="searchbox" type="search" placeholder="  Search" />
           <button id="searchbutton">
             <i class="fas fa-search"></i>
           </button>
-        </div> 
+        </div>
       </div>
-      <!--Right container-->
       <div id="right" class="navstyle">
         <div id="icons" class="navstyle">
           <i class="large material-icons navstyle">video_call</i>
           <i class="fas fa-th navstyle"></i>
           <i class="fas fa-bell navstyle"></i>
-          <img id="userimg" src="./userimg.jpeg" alt="user image" class="navstyle">
-        </div>               
+          <img
+            id="userimg"
+            src="./assets/images/userimg.jpeg"
+            alt="user image"
+            class="navstyle"
+          />
+        </div>
       </div>
-    <!--</div>-->
-  </nav>
-  <main id="main">
-    <div id="columns">
-      <div id="user-column">
-        <div>
-          <!--///////////////////// PLAYER DIV.\\\\\\\\\\\\\\\\\\\\\-->
-          <div id="player-cont">
-            <div id="player">
-              <iframe id="video-player" src="https://www.youtube.com/embed/V74l_zS1x8E" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-          <!--///////////////////// INFO DIV.\\\\\\\\\\\\\\\\\\\\\-->
-          <div id="info">
-            <h1 id="video-title" class="text-style">Contributing to Open Source Part I: The Easy Way</h1> <!--youtube video title-->
-            <div id="info-icons">
-              <div id="icons-left">
-                <div class="text-style">57,638 views</div> <!--Number of views-->                
+    </nav>
+    <main>
+      <div class="columns">
+        <section class="user-column">
+          <div>
+            <section>
+              <div id="player">
+                <iframe
+                  id="video-player"
+                  src="https://www.youtube.com/embed/V74l_zS1x8E"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
               </div>
-              <div id="icons-right">
-                <div  class="text-style button-container">
-                  <a id="like-button" class="text-style">
-                  <div id="iconlike-cont" class="text-style user-style">
-                    <i class="fas fa-thumbs-up"></i> <!--Like button-->
+            </section>
+            <section class="info">
+              <h1 class="video-title" class="text-style">
+                Contributing to Open Source Part I: The Easy Way
+              </h1>
+              <div class="info-icons">
+                <div>
+                  <div class="text-style">57,638 views</div>
+                </div>
+                <div class="icons-right">
+                  <div class="text-style button-container">
+                    <a class="text-style">
+                      <div class="text-style user-style">
+                        <i class="fas fa-thumbs-up"></i>
+                      </div>
+                      <div>427</div>
+                    </a>
                   </div>
-                  <div>427</div> <!--Number of likes-->
-                  </a>
-                </div>
-                <div id="like-container" class="text-style button-container">
-                  <a id="dislike-button" class="text-style">
-                  <div id="icondislike-button" class="text-style user-style">
-                    <i class="fas fa-thumbs-down"></i> <!--Dislike button--> 
+                  <div class="text-style button-container">
+                    <a class="text-style">
+                      <div class="text-style user-style">
+                        <i class="fas fa-thumbs-down"></i>
+                      </div>
+                      <div>18</div>
+                    </a>
                   </div>
-                  <div>18</div> <!--Number of dislikes-->
-                  </a>
-                </div>
-                <div class="share container text-style button-container">
-                  <a id="share-button" class="text-style">
-                  <div id="share" class="text-style user-style">
-                    <i class="fas fa-share"></i>
-                  </div> 
-                  <span>SHARE</span><!--SHARE text-->
-                  </a>
-                </div>
-                <div id="save-container" class="text-style button-container">
-                  <a id="save-button" class="text-style">
-                  <div id="save" class="text-style user-style">
-                    <i class="fa fa-bars add-list-color" aria-hidden="true"></i>
-                  </div> 
-                  <span>SAVE</span><!--SAVE text-->
-                  </a>
-                </div>
-                <div class="text-style button-container">
-                  <a class="text-style">
-                  <div id="dot-icon" class="text-style user-style"> 
-                    <i class="fas fa-ellipsis-h"></i> <!--Horizontal dots-->
+                  <div class="share container text-style button-container">
+                    <a id="share-button" class="text-style">
+                      <div id="share" class="text-style user-style">
+                        <i class="fas fa-share"></i>
+                      </div>
+                      <span>SHARE</span>
+                    </a>
                   </div>
+                  <div id="save-container" class="text-style button-container">
+                    <a id="save-button" class="text-style">
+                      <div id="save" class="text-style user-style">
+                        <i
+                          class="fa fa-bars add-list-color"
+                          aria-hidden="true"
+                        ></i>
+                      </div>
+                      <span>SAVE</span>
+                    </a>
+                  </div>
+                  <div class="text-style button-container">
+                    <a class="text-style">
+                      <div id="dot-icon" class="text-style user-style">
+                        <i class="fas fa-ellipsis-h"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div id="video-description">
+                <div id="channel-container">
+                  <a>
+                    <div id="owner-profile">
+                      <i class="far fa-compass fa-4x"></i>
+                      <div id="owner-info">
+                        <span id="owner-name">The Odin Project</span>
+                        <span id="num-subscribers">992 subscribers</span>
+                      </div>
+                    </div>
                   </a>
+                  <div id="subscribe-container">
+                    <div id="subscribe-text">SUSCRIBE</div>
+                  </div>
+                </div>
+                <p id="description-text">
+                  How do you contribute to open source? In this video, I'll
+                  describe the easiest way to make a simple contribution to an
+                  open source project -- without using the command line, a text
+                  editor, "forking a repo", or even touching Git outside of
+                  Github. I'll also describe what kinds of contributions open
+                  source software projects are typically looking for. As an
+                  example, I use submitting a student solution to a web
+                  development exercise from The Odin Project, a free online
+                  curriculum for learning web development with Ruby on Rails.
+                  You can find more information about that project at
+                  <a href="http://theodinproject.com"
+                    >http://theodinproject.com</a
+                  >
+                </p>
+                <span id="show-less" class="text-style">show less</span>
+              </div>
+              <div id="comments">
+                <div class="user-container">
+                  <img
+                    src="https://yt3.ggpht.com/a/AATXAJzLKjykYa8Rcyh4dmOTZ4xw-Y7Yw8hNs9N2rw=s48-c-k-c0xffffffff-no-rj-mo"
+                    alt="user image"
+                    class="user-img-background color-a"
+                  />
+                  <div class="comments-container">
+                    <div class="name-and-time">
+                      <span class="user-name">Wing N</span>
+                      <span class="time">2 decades ago</span>
+                    </div>
+                    <p class="comment">
+                      "use your powers for good" haha thank you for the video.
+                    </p>
+                    <div class="comment-icons">
+                      <i class="fas fa-thumbs-up"></i>
+                      <span class="comment-icons-text">30M</span>
+                      <i class="fas fa-thumbs-down"></i>
+                      <span class="reply comment-icons-text">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-container">
+                  <div class="user-img-background color-a">
+                    <span class="user-text">B</span>
+                  </div>
+                  <div class="comments-container">
+                    <div class="name-and-time">
+                      <span class="user-name">Andrew</span>
+                      <span class="time">2 months ago</span>
+                    </div>
+                    <p class="comment">
+                      This video didnt help. I see it was uploaded 3 years ago
+                      but I wonder if that would really matter. I'm trying to
+                      submit my solution to the Ruby: Ceasar Cypher project but
+                      can't really figure out how to do it....it's on my Github
+                      repository entitled Odin-Project. help :(
+                    </p>
+                    <div class="comment-icons">
+                      <i class="fas fa-thumbs-up"></i>
+                      <span class="comment-icons-text">30M</span>
+                      <i class="fas fa-thumbs-down"></i>
+                      <span class="reply comment-icons-text">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-container">
+                  <img
+                    src="https://yt3.ggpht.com/a/AATXAJxPw7HviIUxb32yRioygXQuZMtiYOZiZwYD0g=s48-c-k-c0xffffffff-no-rj-mo"
+                    alt="user image"
+                    class="color-a user-img-background"
+                  />
+                  <div class="comments-container">
+                    <div class="name-and-time">
+                      <span class="user-name">Fer del Valle</span>
+                      <span class="time">2 years ago</span>
+                    </div>
+                    <p class="comment">
+                      use your powers for good" haha thank you for the video.
+                    </p>
+                    <div class="comment-icons">
+                      <i class="fas fa-thumbs-up"></i>
+                      <span class="comment-icons-text">30M</span>
+                      <i class="fas fa-thumbs-down"></i>
+                      <span class="reply comment-icons-text">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-container">
+                  <div class="user-img-background color-a">
+                    <span class="user-text">D</span>
+                  </div>
+                  <div class="comments-container">
+                    <div class="name-and-time">
+                      <span class="user-name">Batman</span>
+                      <span class="time">2 decades ago</span>
+                    </div>
+                    <p class="comment">
+                      FYI: the edit button has changed to a diagonal pencil
+                    </p>
+                    <div class="comment-icons">
+                      <i class="fas fa-thumbs-up"></i>
+                      <span class="comment-icons-text">30M</span>
+                      <i class="fas fa-thumbs-down"></i>
+                      <span class="reply comment-icons-text">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-container">
+                  <div class="color-a user-img-background">
+                    <span class="user-text">E</span>
+                  </div>
+                  <div class="comments-container">
+                    <div class="name-and-time">
+                      <span class="user-name">Batman</span>
+                      <span class="time">2 decades ago</span>
+                    </div>
+                    <p class="comment">This is an example of a comment</p>
+                    <div class="comment-icons">
+                      <i class="fas fa-thumbs-up"></i>
+                      <span class="comment-icons-text">30M</span>
+                      <i class="fas fa-thumbs-down"></i>
+                      <span class="reply comment-icons-text">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-container">
+                  <div class="color-a user-img-background">
+                    <span class="user-text">F</span>
+                  </div>
+                  <div class="comments-container">
+                    <div class="name-and-time">
+                      <span class="user-name">Batman</span>
+                      <span class="time">2 decades ago</span>
+                    </div>
+                    <p class="comment">Awesome, thanks</p>
+                    <div class="comment-icons">
+                      <i class="fas fa-thumbs-up"></i>
+                      <span class="comment-icons-text">30M</span>
+                      <i class="fas fa-thumbs-down"></i>
+                      <span class="reply comment-icons-text">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-container">
+                  <div class="color-a user-img-background">
+                    <span class="user-text">G</span>
+                  </div>
+                  <div class="comments-container">
+                    <div class="name-and-time">
+                      <span class="user-name">Batman</span>
+                      <span class="time">2 decades ago</span>
+                    </div>
+                    <p class="comment">
+                      They seem to have removed the link from the bottom of the
+                      student solutions...
+                    </p>
+                    <div class="comment-icons">
+                      <i class="fas fa-thumbs-up"></i>
+                      <span class="comment-icons-text">30M</span>
+                      <i class="fas fa-thumbs-down"></i>
+                      <span class="reply comment-icons-text">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-container">
+                  <div class="color-a user-img-background">
+                    <span class="user-text">H</span>
+                  </div>
+                  <div class="comments-container">
+                    <div class="name-and-time">
+                      <span class="user-name">Batman</span>
+                      <span class="time">2 decades ago</span>
+                    </div>
+                    <p class="comment">
+                      This video didnt help. I see it was uploaded 3 years ago
+                      but I wonder if that would really matter. I'm trying to
+                      submit my solution to the Ruby: Ceasar Cypher project but
+                      can't really figure out how to do it....it's on my Github
+                      repository entitled Odin-Project. help :(
+                    </p>
+                    <div class="comment-icons">
+                      <i class="fas fa-thumbs-up"></i>
+                      <span class="comment-icons-text">30M</span>
+                      <i class="fas fa-thumbs-down"></i>
+                      <span class="reply comment-icons-text">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-container">
+                  <div class="color-a user-img-background">
+                    <span class="user-text">I</span>
+                  </div>
+                  <div class="comments-container">
+                    <div class="name-and-time">
+                      <span class="user-name">Batman</span>
+                      <span class="time">2 decades ago</span>
+                    </div>
+                    <p class="comment">
+                      Your video helped me try to make my first contribution!
+                      Thank you so much!
+                    </p>
+                    <div class="comment-icons">
+                      <i class="fas fa-thumbs-up"></i>
+                      <span class="comment-icons-text">30M</span>
+                      <i class="fas fa-thumbs-down"></i>
+                      <span class="reply comment-icons-text">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-container">
+                  <div class="color-a user-img-background">
+                    <span class="user-text">J</span>
+                  </div>
+                  <div class="comments-container">
+                    <div class="name-and-time">
+                      <span class="user-name">Batman</span>
+                      <span class="time">2 decades ago</span>
+                    </div>
+                    <p class="comment">Nice.Thanks a lot :)</p>
+                    <div class="comment-icons">
+                      <i class="fas fa-thumbs-up"></i>
+                      <span class="comment-icons-text">30M</span>
+                      <i class="fas fa-thumbs-down"></i>
+                      <span class="reply comment-icons-text">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-container">
+                  <div class="user-img-background color-a">
+                    <span class="user-text">K</span>
+                  </div>
+                  <div class="comments-container">
+                    <div class="name-and-time">
+                      <span class="user-name">Batman</span>
+                      <span class="time">2 decades ago</span>
+                    </div>
+                    <p class="comment">
+                      A remark to what happening at 04:12 is: after clicking
+                      "Propose file change", it now goes to commit page instead
+                      of the pull request screen as shown on the video. One need
+                      to click the commit name (e.g. patch-1 if it is the first
+                      commit of your branch) near the top of the screen to go to
+                      the pull request screen.
+                    </p>
+                    <div class="comment-icons">
+                      <i class="fas fa-thumbs-up"></i>
+                      <span class="comment-icons-text">30M</span>
+                      <i class="fas fa-thumbs-down"></i>
+                      <span class="reply comment-icons-text">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-container">
+                  <div class="color-a user-img-background">
+                    <span class="user-text">L</span>
+                  </div>
+                  <div class="comments-container">
+                    <div class="name-and-time">
+                      <span class="user-name">Batman</span>
+                      <span class="time">2 decades ago</span>
+                    </div>
+                    <p class="comment">
+                      What if the project is huge and the issues involve things
+                      you don't even understand? t
+                    </p>
+                    <div class="comment-icons">
+                      <i class="fas fa-thumbs-up"></i>
+                      <span class="comment-icons-text">30M</span>
+                      <i class="fas fa-thumbs-down"></i>
+                      <span class="reply comment-icons-text">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-container">
+                  <div class="color-a user-img-background">
+                    <span class="user-text">M</span>
+                  </div>
+                  <div class="comments-container">
+                    <div class="name-and-time">
+                      <span class="user-name">Batman</span>
+                      <span class="time">2 decades ago</span>
+                    </div>
+                    <p class="comment">thanks a lot for video</p>
+                    <div class="comment-icons">
+                      <i class="fas fa-thumbs-up"></i>
+                      <span class="comment-icons-text">30M</span>
+                      <i class="fas fa-thumbs-down"></i>
+                      <span class="reply comment-icons-text">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-container">
+                  <div class="user-img-background color-a">
+                    <span class="user-text">N</span>
+                  </div>
+                  <div class="comments-container">
+                    <div class="name-and-time">
+                      <span class="user-name">Batman</span>
+                      <span class="time">2 decades ago</span>
+                    </div>
+                    <p class="comment">This is an example of a comment</p>
+                    <div class="comment-icons">
+                      <i class="fas fa-thumbs-up"></i>
+                      <span class="comment-icons-text">30M</span>
+                      <i class="fas fa-thumbs-down"></i>
+                      <span class="reply comment-icons-text">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-container">
+                  <div class="user-img-background color-a">
+                    <span class="user-text">O</span>
+                  </div>
+                  <div class="comments-container">
+                    <div class="name-and-time">
+                      <span class="user-name">Batman</span>
+                      <span class="time">2 decades ago</span>
+                    </div>
+                    <p class="comment">
+                      Wow this video was super helpful, clear, and concise.
+                      Thank you very much.
+                    </p>
+                    <div class="comment-icons">
+                      <i class="fas fa-thumbs-up"></i>
+                      <span class="comment-icons-text">30M</span>
+                      <i class="fas fa-thumbs-down"></i>
+                      <span class="reply comment-icons-text">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-container">
+                  <div class="color-a user-img-background">
+                    <span class="user-text">P</span>
+                  </div>
+                  <div class="comments-container">
+                    <div class="name-and-time">
+                      <span class="user-name">Batman</span>
+                      <span class="time">2 decades ago</span>
+                    </div>
+                    <p class="comment">
+                      I am working through the Odin Project which is good but it
+                      took me ages to figure out how to submit my solution to
+                      the HTML/CSS project.I posted in all places (on the Odin
+                      website, on Google+ and others) and I finally got a reply
+                      (thanks hgducherne). However I'm still waiting for the
+                      repo admin to accept my pull request, so this has been a
+                      slow, tedious process as my first introduction to
+                      contributing on GitHub. Shame I didn't see this video
+                      earlier and I hope my pull request is dealt with soon.....
+                    </p>
+                    <div class="comment-icons">
+                      <i class="fas fa-thumbs-up"></i>
+                      <span class="comment-icons-text">30M</span>
+                      <i class="fas fa-thumbs-down"></i>
+                      <span class="reply comment-icons-text">Reply</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          
-          <!--///////////////////// VIDEO DESCRIPTION DIV.\\\\\\\\\\\\\\\\\\\\\-->
-          <div id="video-description">
-          <div id="channel-container">
-              <a>
-              <div id="owner-profile">
-                <i class="far fa-compass fa-4x"></i>
-                <div id="owner-info">
-                  <span id="owner-name">The Odin Project</span>
-                  <span id="num-subscribers">992 subscribers</span>
-                </div>
-              </div>
-              </a>
-              <div id="subscribe-container">
-                <div id="subscribe-text">SUSCRIBE</div>
-              </div>
+            </section>
           </div>
-          <p id="description-text">How do you contribute to open source?  In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github.  I'll also describe what kinds of contributions open source software projects are typically looking for.  As an example, I use submitting a student solution to a web development exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails.  You can find more information about that project at <a href="http://theodinproject.com">http://theodinproject.com</a></p>
-          <span id="show-less" class="text-style">show less</span> 
-          </div>
-          <!--///////////////////// COMMENTS DIV.\\\\\\\\\\\\\\\\\\\\\-->
-          <div id="comments">
-            <!--This will show up 16 times-->
-            <div class="user-container"> 
-              <img  src="https://yt3.ggpht.com/a/AATXAJzLKjykYa8Rcyh4dmOTZ4xw-Y7Yw8hNs9N2rw=s48-c-k-c0xffffffff-no-rj-mo" alt="user image" class="user-img-background color-a">
-              <div class="comments-container"> <!--Comments area-->
-                <div class="name-and-time">    
-                  <span class="user-name">Wing N</span> <!--Comment user name-->
-                  <span class="time">2 decades ago</span>  <!--How long ago is this comment here?-->
-                </div>
-                <p class="comment">"use your powers for good" haha
-                  thank you for the video.</p>       <!--The comment itself-->
-                <div class="comment-icons">   <!--The container of the comment icons-->
-                  <i class="fas fa-thumbs-up"></i>
-                  <span class="comment-icons-text">30M</span>
-                  <i class="fas fa-thumbs-down"></i>
-                  <span class="reply comment-icons-text">Reply</span>
-                </div>
-              </div>
-            </div>
-            <!--This will show up 16 times-->
-            <div class="user-container"> 
-              <div class="user-img-background color-a"> <!--User A image-->
-                <span class="user-text">B</span>
-              </div>
-              <div class="comments-container"> <!--Comments area-->
-              <div class="name-and-time">    
-                <span class="user-name">Andrew</span> <!--Comment user name-->
-                <span class="time">2 months ago</span>  <!--How long ago is this comment here?-->
-              </div>
-              <p class="comment"> This video didnt help. I see it was uploaded 3 years ago but I wonder if that would really matter. I'm trying to submit my solution to the Ruby: Ceasar Cypher project but can't really figure out how to do it....it's on my Github repository entitled Odin-Project. help :( </p>       <!--The comment itself-->
-              <div class="comment-icons">   <!--The container of the comment icons-->
-                <i class="fas fa-thumbs-up"></i>
-                <span class="comment-icons-text">30M</span>
-                <i class="fas fa-thumbs-down"></i>
-                <span class="reply comment-icons-text">Reply</span>
+        </section>
+        <section class="playlist">
+          <div>
+            <div class="head">
+              <div class="upnext">Up next</div>
+              <div class="autoplay">Autoplay</div>
+              <div class="toggleicon">
+                <i class="fas fa-toggle-on fa-2x"></i>
               </div>
             </div>
           </div>
-           <!--This will show up 16 times-->
-           <div class="user-container"> 
-            <img src="https://yt3.ggpht.com/a/AATXAJxPw7HviIUxb32yRioygXQuZMtiYOZiZwYD0g=s48-c-k-c0xffffffff-no-rj-mo" alt="user image" class="color-a user-img-background">
-            <div class="comments-container"> <!--Comments area-->
-              <div class="name-and-time">    
-                <span class="user-name">Fer del Valle</span> <!--Comment user name-->
-                <span class="time">2 years ago</span>  <!--How long ago is this comment here?-->
-              </div>
-              <p class="comment">use your powers for good" haha
-                thank you for the video.</p>       <!--The comment itself-->
-              <div class="comment-icons">   <!--The container of the comment icons-->
-                <i class="fas fa-thumbs-up"></i>
-                <span class="comment-icons-text">30M</span>
-                <i class="fas fa-thumbs-down"></i>
-                <span class="reply comment-icons-text">Reply</span>
-              </div>
+          <div class="coming-next-video-container">
+            <img class="next-video-img" alt="Playlist thumbnail" src="https://i.ytimg.com/vi/k6KcaMffxac/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBdfw_ZeNXlZLdcyyNPQgT8Trs23g">
+            <div class="thumb-description-container">
+              <span class="next-vid-title">Flutter Tutorials for beginners - Building iOS and Android...</span>
+              <span class="next-vid-user" class="thumbnails-text-style">Academind</span>
+              <span class="next-vid-views-time" class="thumbnails-text-style">1 M views * 1 year ago</span>
             </div>
           </div>
-           <!--This will show up 16 times-->
-           <div class="user-container"> 
-            <div  class="user-img-background color-a"> <!--User A image-->
-              <span class="user-text">D</span>
-            </div>
-            <div class="comments-container"> <!--Comments area-->
-              <div class="name-and-time">    
-                <span class="user-name">Batman</span> <!--Comment user name-->
-                <span class="time">2 decades ago</span>  <!--How long ago is this comment here?-->
-              </div>
-              <p class="comment"> FYI: the edit button has changed to a diagonal pencil</p>       <!--The comment itself-->
-              <div class="comment-icons">   <!--The container of the comment icons-->
-                <i class="fas fa-thumbs-up"></i>
-                <span class="comment-icons-text">30M</span>
-                <i class="fas fa-thumbs-down"></i>
-                <span class="reply comment-icons-text">Reply</span>
-              </div>
+          <div class="thumbnail-container">
+            <img
+              class="thumb-video-img"
+              alt="Playlist thumbnail"
+              src="https://i.ytimg.com/vi/mENDYhfxH-o/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCkfVRy7wF7AcX32H5fDmMUamnDZA"
+            />
+            <div class="thumb-description-container">
+              <span class="thumb-vid-title"
+                >Flutter Tutorials for beginners - Building iOS and
+                Android...</span
+              >
+              <span class="thumbnails-text-style">Academind</span>
+              <span class="thumbnails-text-style">1 M views * 1 year ago</span>
             </div>
           </div>
-           <!--This will show up 16 times-->
-           <div class="user-container"> 
-            <div class="color-a user-img-background"> <!--User A image-->
-              <span class="user-text">E</span>
-            </div>
-            <div class="comments-container"> <!--Comments area-->
-              <div class="name-and-time">    
-                <span class="user-name">Batman</span> <!--Comment user name-->
-                <span class="time">2 decades ago</span>  <!--How long ago is this comment here?-->
-              </div>
-              <p class="comment">This is an example of a comment</p>       <!--The comment itself-->
-              <div class="comment-icons">   <!--The container of the comment icons-->
-                <i class="fas fa-thumbs-up"></i>
-                <span class="comment-icons-text">30M</span>
-                <i class="fas fa-thumbs-down"></i>
-                <span class="reply comment-icons-text">Reply</span>
-              </div>
+          <div class="thumbnail-container">
+            <!--Thumbnails videos-->
+            <img
+              class="thumb-video-img"
+              alt="Playlist thumbnail"
+              src="https://i.ytimg.com/vi/ZS_kXvOeQ5Y/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCR7_zj90NrCcbCxJfJGAVbg-e6aw"
+            />
+            <div class="thumb-description-container">
+              <span class="thumb-vid-title"
+                >Flutter Tutorials for beginners - Building iOS and
+                Android...</span
+              >
+              <span class="thumbnails-text-style">Academind</span>
+              <span class="thumbnails-text-style">1 M views * 1 year ago</span>
+              <!--Quantity of views and how long ago is this video here-->
             </div>
           </div>
-           <!--This will show up 16 times-->
-           <div class="user-container"> 
-            <div class="color-a user-img-background"> <!--User A image-->
-              <span class="user-text">F</span>
-            </div>
-            <div class="comments-container"> <!--Comments area-->
-              <div class="name-and-time">    
-                <span class="user-name">Batman</span> <!--Comment user name-->
-                <span class="time">2 decades ago</span>  <!--How long ago is this comment here?-->
-              </div>
-              <p class="comment"> Awesome, thanks </p>       <!--The comment itself-->
-              <div class="comment-icons">   <!--The container of the comment icons-->
-                <i class="fas fa-thumbs-up"></i>
-                <span class="comment-icons-text">30M</span>
-                <i class="fas fa-thumbs-down"></i>
-                <span class="reply comment-icons-text">Reply</span>
-              </div>
+          <div class="thumbnail-container">
+            <!--Thumbnails videos-->
+            <img
+              class="thumb-video-img"
+              alt="Playlist thumbnail"
+              src="https://i.ytimg.com/vi/6avJHaC3C2U/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLC1ieujVQYZJbW53Dbu4p8tHb9TAQ"
+            />
+            <div class="thumb-description-container">
+              <span class="thumb-vid-title"
+                >Flutter Tutorials for beginners - Building iOS and
+                Android...</span
+              >
+              <span class="thumbnails-text-style">Academind</span>
+              <span class="thumbnails-text-style">1 M views * 1 year ago</span>
+              <!--Quantity of views and how long ago is this video here-->
             </div>
           </div>
-           <!--This will show up 16 times-->
-           <div class="user-container"> 
-            <div class="color-a user-img-background"> <!--User A image-->
-              <span class="user-text">G</span>
-            </div>
-            <div class="comments-container"> <!--Comments area-->
-              <div class="name-and-time">    
-                <span class="user-name">Batman</span> <!--Comment user name-->
-                <span class="time">2 decades ago</span>  <!--How long ago is this comment here?-->
-              </div>
-              <p class="comment">They seem to have removed the link from the bottom of the student solutions... </p>       <!--The comment itself-->
-              <div class="comment-icons">   <!--The container of the comment icons-->
-                <i class="fas fa-thumbs-up"></i>
-                <span class="comment-icons-text">30M</span>
-                <i class="fas fa-thumbs-down"></i>
-                <span class="reply comment-icons-text">Reply</span>
-              </div>
+          <div class="thumbnail-container">
+            <!--Thumbnails videos-->
+            <img
+              class="thumb-video-img"
+              alt="Playlist thumbnail"
+              src="https://i.ytimg.com/vi/V1y-mbWM3B8/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLC-nKJor1rNG2zhfBqIy5HFV45A3g"
+            />
+            <div class="thumb-description-container">
+              <span class="thumb-vid-title"
+                >Flutter Tutorials for beginners - Building iOS and
+                Android...</span
+              >
+              <span class="thumbnails-text-style">Academind</span>
+              <span class="thumbnails-text-style">1 M views * 1 year ago</span>
+              <!--Quantity of views and how long ago is this video here-->
             </div>
           </div>
-           <!--This will show up 16 times-->
-           <div class="user-container"> 
-            <div class="color-a user-img-background"> <!--User A image-->
-              <span class="user-text">H</span>
-            </div>
-            <div class="comments-container"> <!--Comments area-->
-              <div class="name-and-time">    
-                <span class="user-name">Batman</span> <!--Comment user name-->
-                <span class="time">2 decades ago</span>  <!--How long ago is this comment here?-->
-              </div>
-              <p class="comment"> This video didnt help. I see it was uploaded 3 years ago but I wonder if that would really matter. I'm trying to submit my solution to the Ruby: Ceasar Cypher project but can't really figure out how to do it....it's on my Github repository entitled Odin-Project. help :( </p>       <!--The comment itself-->
-              <div class="comment-icons">   <!--The container of the comment icons-->
-                <i class="fas fa-thumbs-up"></i>
-                <span class="comment-icons-text">30M</span>
-                <i class="fas fa-thumbs-down"></i>
-                <span class="reply comment-icons-text">Reply</span>
-              </div>
+          <div class="thumbnail-container">
+            <!--Thumbnails videos-->
+            <img
+              class="thumb-video-img"
+              alt="Playlist thumbnail"
+              src="https://i.ytimg.com/vi/5MgBikgcWnY/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLAnKKkXrqwNvBt9PqI0VoTnVGdbUg"
+            />
+            <div class="thumb-description-container">
+              <span class="thumb-vid-title"
+                >Flutter Tutorials for beginners - Building iOS and
+                Android...</span
+              >
+              <span class="thumbnails-text-style">Academind</span>
+              <span class="thumbnails-text-style">1 M views * 1 year ago</span>
+              <!--Quantity of views and how long ago is this video here-->
             </div>
           </div>
-           <!--This will show up 16 times-->
-           <div class="user-container"> 
-            <div class="color-a user-img-background"> <!--User A image-->
-              <span class="user-text">I</span>
-            </div>
-            <div class="comments-container"> <!--Comments area-->
-              <div class="name-and-time">    
-                <span class="user-name">Batman</span> <!--Comment user name-->
-                <span class="time">2 decades ago</span>  <!--How long ago is this comment here?-->
-              </div>
-              <p class="comment">Your video helped me try to make my first contribution! Thank you so much! </p>       <!--The comment itself-->
-              <div class="comment-icons">   <!--The container of the comment icons-->
-                <i class="fas fa-thumbs-up"></i>
-                <span class="comment-icons-text">30M</span>
-                <i class="fas fa-thumbs-down"></i>
-                <span class="reply comment-icons-text">Reply</span>
-              </div>
+          <div class="thumbnail-container">
+            <!--Thumbnails videos-->
+            <img
+              class="thumb-video-img"
+              alt="Playlist thumbnail"
+              src="https://i.ytimg.com/vi/k152ovSOR74/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLAQtITeus3HmL2YnTEv8FH0wLj5NA"
+            />
+            <div class="thumb-description-container">
+              <span class="thumb-vid-title"
+                >Flutter Tutorials for beginners - Building iOS and
+                Android...</span
+              >
+              <span class="thumbnails-text-style">Academind</span>
+              <span class="thumbnails-text-style">1 M views * 1 year ago</span>
+              <!--Quantity of views and how long ago is this video here-->
             </div>
           </div>
-           <!--This will show up 16 times-->
-           <div class="user-container"> 
-            <div class="color-a user-img-background"> <!--User A image-->
-              <span class="user-text">J</span>
-            </div>
-            <div class="comments-container"> <!--Comments area-->
-              <div class="name-and-time">    
-                <span class="user-name">Batman</span> <!--Comment user name-->
-                <span class="time">2 decades ago</span>  <!--How long ago is this comment here?-->
-              </div>
-              <p class="comment"> Nice.Thanks a lot :) </p>       <!--The comment itself-->
-              <div class="comment-icons">   <!--The container of the comment icons-->
-                <i class="fas fa-thumbs-up"></i>
-                <span class="comment-icons-text">30M</span>
-                <i class="fas fa-thumbs-down"></i>
-                <span class="reply comment-icons-text">Reply</span>
-              </div>
+          <div class="thumbnail-container">
+            <!--Thumbnails videos-->
+            <img
+              class="thumb-video-img"
+              alt="Playlist thumbnail"
+              src="https://i.ytimg.com/vi/E03gh1huvW4/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCHoFylvRcTKpHFD_bdTalkiyO4bQ"
+            />
+            <div class="thumb-description-container">
+              <span class="thumb-vid-title"
+                >Flutter Tutorials for beginners - Building iOS and
+                Android...</span
+              >
+              <span class="thumbnails-text-style">Academind</span>
+              <span class="thumbnails-text-style">1 M views * 1 year ago</span>
+              <!--Quantity of views and how long ago is this video here-->
             </div>
           </div>
-           <!--This will show up 16 times-->
-           <div class="user-container"> 
-            <div class="user-img-background color-a"> <!--User A image-->
-              <span class="user-text">K</span>
-            </div>
-            <div class="comments-container"> <!--Comments area-->
-              <div class="name-and-time">    
-                <span class="user-name">Batman</span> <!--Comment user name-->
-                <span class="time">2 decades ago</span>  <!--How long ago is this comment here?-->
-              </div>
-              <p class="comment"> A remark to what happening at 04:12 is: after clicking "Propose file change", it now goes to commit page instead of the pull request screen as shown on the video. One need to click the commit name (e.g. patch-1 if it is the first commit of your branch) near the top of the screen to go to the pull request screen. </p>       <!--The comment itself-->
-              <div class="comment-icons">   <!--The container of the comment icons-->
-                <i class="fas fa-thumbs-up"></i>
-                <span class="comment-icons-text">30M</span>
-                <i class="fas fa-thumbs-down"></i>
-                <span class="reply comment-icons-text">Reply</span>
-              </div>
+          <div class="thumbnail-container">
+            <!--Thumbnails videos-->
+            <img
+              class="thumb-video-img"
+              alt="Playlist thumbnail"
+              src="https://i.ytimg.com/vi/qz9tKlF431k/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBZiywZt-kXuOT7Qd7W-QPMgPVjnw"
+            />
+            <div class="thumb-description-container">
+              <span class="thumb-vid-title"
+                >Flutter Tutorials for beginners - Building iOS and
+                Android...</span
+              >
+              <span class="thumbnails-text-style">Academind</span>
+              <span class="thumbnails-text-style">1 M views * 1 year ago</span>
+              <!--Quantity of views and how long ago is this video here-->
             </div>
           </div>
-           <!--This will show up 16 times-->
-           <div class="user-container"> 
-            <div class="color-a user-img-background"> <!--User A image-->
-              <span class="user-text">L</span>
-            </div>
-            <div class="comments-container"> <!--Comments area-->
-              <div class="name-and-time">    
-                <span class="user-name">Batman</span> <!--Comment user name-->
-                <span class="time">2 decades ago</span>  <!--How long ago is this comment here?-->
-              </div>
-              <p class="comment"> What if the project is huge and the issues involve things you don't even understand? t</p>       <!--The comment itself-->
-              <div class="comment-icons">   <!--The container of the comment icons-->
-                <i class="fas fa-thumbs-up"></i>
-                <span class="comment-icons-text">30M</span>
-                <i class="fas fa-thumbs-down"></i>
-                <span class="reply comment-icons-text">Reply</span>
-              </div>
+          <div class="thumbnail-container">
+            <!--Thumbnails videos-->
+            <img
+              class="thumb-video-img"
+              alt="Playlist thumbnail"
+              src="https://i.ytimg.com/vi/xvqsFTUsOmc/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCzuXE_XkM3wFVN6aIiweSvJlSi-A"
+            />
+            <div class="thumb-description-container">
+              <span class="thumb-vid-title"
+                >Flutter Tutorials for beginners - Building iOS and
+                Android...</span
+              >
+              <span class="thumbnails-text-style">Academind</span>
+              <span class="thumbnails-text-style">1 M views * 1 year ago</span>
+              <!--Quantity of views and how long ago is this video here-->
             </div>
           </div>
-           <!--This will show up 16 times-->
-           <div class="user-container"> 
-            <div class="color-a user-img-background"> <!--User A image-->
-              <span class="user-text">M</span>
-            </div>
-            <div class="comments-container"> <!--Comments area-->
-              <div class="name-and-time">    
-                <span class="user-name">Batman</span> <!--Comment user name-->
-                <span class="time">2 decades ago</span>  <!--How long ago is this comment here?-->
-              </div>
-              <p class="comment"> thanks a lot for video </p>       <!--The comment itself-->
-              <div class="comment-icons">   <!--The container of the comment icons-->
-                <i class="fas fa-thumbs-up"></i>
-                <span class="comment-icons-text">30M</span>
-                <i class="fas fa-thumbs-down"></i>
-                <span class="reply comment-icons-text">Reply</span>
-              </div>
+          <div class="thumbnail-container">
+            <!--Thumbnails videos-->
+            <img
+              class="thumb-video-img"
+              alt="Playlist thumbnail"
+              src="https://i.ytimg.com/vi/dSl_qnWO104/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLD4Fa0cYcyAtnQuf9aWV7YjB3GWbw"
+            />
+            <div class="thumb-description-container">
+              <span class="thumb-vid-title"
+                >Flutter Tutorials for beginners - Building iOS and
+                Android...</span
+              >
+              <span class="thumbnails-text-style">Academind</span>
+              <span class="thumbnails-text-style">1 M views * 1 year ago</span>
+              <!--Quantity of views and how long ago is this video here-->
             </div>
           </div>
-           <!--This will show up 16 times-->
-           <div class="user-container"> 
-            <div class="user-img-background color-a"> <!--User A image-->
-              <span class="user-text">N</span>
-            </div>
-            <div class="comments-container"> <!--Comments area-->
-              <div class="name-and-time">    
-                <span class="user-name">Batman</span> <!--Comment user name-->
-                <span class="time">2 decades ago</span>  <!--How long ago is this comment here?-->
-              </div>
-              <p class="comment">This is an example of a comment</p>       <!--The comment itself-->
-              <div class="comment-icons">   <!--The container of the comment icons-->
-                <i class="fas fa-thumbs-up"></i>
-                <span class="comment-icons-text">30M</span>
-                <i class="fas fa-thumbs-down"></i>
-                <span class="reply comment-icons-text">Reply</span>
-              </div>
+          <div class="thumbnail-container">
+            <!--Thumbnails videos-->
+            <img
+              class="thumb-video-img"
+              alt="Playlist thumbnail"
+              src="https://i.ytimg.com/vi/7YcW25PHnAA/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDo4h0d81yeN9dRpDdvWrv7g8k5wQ"
+            />
+            <div class="thumb-description-container">
+              <span class="thumb-vid-title"
+                >Flutter Tutorials for beginners - Building iOS and
+                Android...</span
+              >
+              <span class="thumbnails-text-style">Academind</span>
+              <span class="thumbnails-text-style">1 M views * 1 year ago</span>
+              <!--Quantity of views and how long ago is this video here-->
             </div>
           </div>
-           <!--This will show up 16 times-->
-           <div class="user-container"> 
-            <div class="user-img-background color-a"> <!--User A image-->
-              <span class="user-text">O</span>
-            </div>
-            <div class="comments-container"> <!--Comments area-->
-              <div class="name-and-time">    
-                <span class="user-name">Batman</span> <!--Comment user name-->
-                <span class="time">2 decades ago</span>  <!--How long ago is this comment here?-->
-              </div>
-              <p class="comment"> Wow this video was super helpful, clear, and concise. Thank you very much. </p>       <!--The comment itself-->
-              <div class="comment-icons">   <!--The container of the comment icons-->
-                <i class="fas fa-thumbs-up"></i>
-                <span class="comment-icons-text">30M</span>
-                <i class="fas fa-thumbs-down"></i>
-                <span class="reply comment-icons-text">Reply</span>
-              </div>
-            </div>
-           </div>
-           <!--This will show up 16 times-->
-           <div class="user-container"> 
-            <div class="color-a user-img-background"> <!--User A image-->
-              <span class="user-text">P</span>
-            </div>
-            <div class="comments-container"> <!--Comments area-->
-              <div class="name-and-time">    
-                <span class="user-name">Batman</span> <!--Comment user name-->
-                <span class="time">2 decades ago</span>  <!--How long ago is this comment here?-->
-              </div>
-              <p class="comment">
-                I am working through the Odin Project which is good but it took me ages to figure out how to submit my solution to the HTML/CSS project.I posted in all places (on the Odin website, on Google+ and others) and I finally got a reply (thanks hgducherne). However I'm still waiting for the repo admin to accept my pull request, so this has been a slow, tedious process as my first introduction to contributing on GitHub. Shame I didn't see this video earlier and I hope my pull request is dealt with soon..... </p>       <!--The comment itself-->
-              <div class="comment-icons">   <!--The container of the comment icons-->
-                <i class="fas fa-thumbs-up"></i>
-                <span class="comment-icons-text">30M</span>
-                <i class="fas fa-thumbs-down"></i>
-                <span class="reply comment-icons-text">Reply</span>
-              </div>
+          <div class="thumbnail-container">
+            <!--Thumbnails videos-->
+            <img
+              class="thumb-video-img"
+              alt="Playlist thumbnail"
+              src="https://i.ytimg.com/vi/VuN8qwZoego/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLB430mHoAktFt0bqTkRUOvd7GqfiQ"
+            />
+            <div class="thumb-description-container">
+              <span class="thumb-vid-title"
+                >Flutter Tutorials for beginners - Building iOS and
+                Android...</span
+              >
+              <span class="thumbnails-text-style">Academind</span>
+              <span class="thumbnails-text-style">1 M views * 1 year ago</span>
+              <!--Quantity of views and how long ago is this video here-->
             </div>
           </div>
+          <div class="thumbnail-container">
+            <!--Thumbnails videos-->
+            <img
+              class="thumb-video-img"
+              alt="Playlist thumbnail"
+              src="https://i.ytimg.com/vi/VuN8qwZoego/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLB430mHoAktFt0bqTkRUOvd7GqfiQ"
+            />
+            <div class="thumb-description-container">
+              <span class="thumb-vid-title"
+                >Flutter Tutorials for beginners - Building iOS and
+                Android...</span
+              >
+              <span class="thumbnails-text-style">Academind</span>
+              <span class="thumbnails-text-style">1 M views * 1 year ago</span>
+              <!--Quantity of views and how long ago is this video here-->
+            </div>
           </div>
-        </div>
+          <div class="thumbnail-container">
+            <!--Thumbnails videos-->
+            <img
+              class="thumb-video-img"
+              alt="Playlist thumbnail"
+              src="https://i.ytimg.com/vi/NtzZBTjKngw/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCxMeRCDU9Gs4J3FNUzNTL2-vKjHg"
+            />
+            <div class="thumb-description-container">
+              <span class="thumb-vid-title"
+                >Flutter Tutorials for beginners - Building iOS and
+                Android...</span
+              >
+              <span class="thumbnails-text-style">Academind</span>
+              <span class="thumbnails-text-style">1 M views * 1 year ago</span>
+              <!--Quantity of views and how long ago is this video here-->
+            </div>
+          </div>
+        </section>
       </div>
-      </div>
-      <!--/////////////////////////PLAYLIST COLUMN/////////////////////-->
-      <div id="playlist">
-        <div id="items">
-          <div id="head">
-            <div id="upnext">Up next</div>
-            <div id="autoplay">Autoplay</div>
-            <div id="toggleicon">
-              <i class="fas fa-toggle-on fa-2x"></i>
-            </div>
-          </div>
-        </div>
-        <div id="coming-next-video-container">
-          <img id="next-video-img" alt="Playlist thumbnail" src="https://i.ytimg.com/vi/k6KcaMffxac/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBdfw_ZeNXlZLdcyyNPQgT8Trs23g">
-          <div id="thumb-description-container">
-            <span id="next-vid-title">Flutter Tutorials for beginners - Building iOS and Android...</span>
-            <span id="next-vid-user" class="thumbnails-text-style">Academind</span>
-            <span id="next-vid-views-time" class="thumbnails-text-style">1 M views * 1 year ago</span> <!--Quantity of views and how long ago is this video here-->
-          </div>
-        </div>
-        <div class="thumbnail-container"> <!--Thumbnails videos-->
-          <img class="thumb-video-img" alt="Playlist thumbnail" src="https://i.ytimg.com/vi/mENDYhfxH-o/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCkfVRy7wF7AcX32H5fDmMUamnDZA">
-          <div class="thumb-description-container">
-            <span class="thumb-vid-title">Flutter Tutorials for beginners - Building iOS and Android...</span>
-            <span class="thumbnails-text-style">Academind</span>
-            <span class="thumbnails-text-style">1 M views * 1 year ago</span> <!--Quantity of views and how long ago is this video here-->
-          </div>
-        </div>
-        <div class="thumbnail-container"> <!--Thumbnails videos-->
-          <img class="thumb-video-img" alt="Playlist thumbnail" src="https://i.ytimg.com/vi/ZS_kXvOeQ5Y/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCR7_zj90NrCcbCxJfJGAVbg-e6aw">
-          <div class="thumb-description-container">
-            <span class="thumb-vid-title">Flutter Tutorials for beginners - Building iOS and Android...</span>
-            <span class="thumbnails-text-style">Academind</span>
-            <span class="thumbnails-text-style">1 M views * 1 year ago</span> <!--Quantity of views and how long ago is this video here-->
-          </div>
-        </div>
-        <div class="thumbnail-container"> <!--Thumbnails videos-->
-          <img class="thumb-video-img" alt="Playlist thumbnail" src="https://i.ytimg.com/vi/6avJHaC3C2U/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLC1ieujVQYZJbW53Dbu4p8tHb9TAQ">
-          <div class="thumb-description-container">
-            <span class="thumb-vid-title">Flutter Tutorials for beginners - Building iOS and Android...</span>
-            <span class="thumbnails-text-style">Academind</span>
-            <span class="thumbnails-text-style">1 M views * 1 year ago</span> <!--Quantity of views and how long ago is this video here-->
-          </div>
-        </div>
-        <div class="thumbnail-container"> <!--Thumbnails videos-->
-          <img class="thumb-video-img" alt="Playlist thumbnail" src="https://i.ytimg.com/vi/V1y-mbWM3B8/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLC-nKJor1rNG2zhfBqIy5HFV45A3g">
-          <div class="thumb-description-container">
-            <span class="thumb-vid-title">Flutter Tutorials for beginners - Building iOS and Android...</span>
-            <span class="thumbnails-text-style">Academind</span>
-            <span class="thumbnails-text-style">1 M views * 1 year ago</span> <!--Quantity of views and how long ago is this video here-->
-          </div>
-        </div>
-        <div class="thumbnail-container"> <!--Thumbnails videos-->
-          <img class="thumb-video-img" alt="Playlist thumbnail" src="https://i.ytimg.com/vi/5MgBikgcWnY/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLAnKKkXrqwNvBt9PqI0VoTnVGdbUg">
-          <div class="thumb-description-container">
-            <span class="thumb-vid-title">Flutter Tutorials for beginners - Building iOS and Android...</span>
-            <span class="thumbnails-text-style">Academind</span>
-            <span class="thumbnails-text-style">1 M views * 1 year ago</span> <!--Quantity of views and how long ago is this video here-->
-          </div>
-        </div>
-        <div class="thumbnail-container"> <!--Thumbnails videos-->
-          <img class="thumb-video-img" alt="Playlist thumbnail" src="https://i.ytimg.com/vi/k152ovSOR74/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLAQtITeus3HmL2YnTEv8FH0wLj5NA">
-          <div class="thumb-description-container">
-            <span class="thumb-vid-title">Flutter Tutorials for beginners - Building iOS and Android...</span>
-            <span class="thumbnails-text-style">Academind</span>
-            <span class="thumbnails-text-style">1 M views * 1 year ago</span> <!--Quantity of views and how long ago is this video here-->
-          </div>
-        </div>
-        <div class="thumbnail-container"> <!--Thumbnails videos-->
-          <img class="thumb-video-img" alt="Playlist thumbnail" src="https://i.ytimg.com/vi/E03gh1huvW4/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCHoFylvRcTKpHFD_bdTalkiyO4bQ">
-          <div class="thumb-description-container">
-            <span class="thumb-vid-title">Flutter Tutorials for beginners - Building iOS and Android...</span>
-            <span class="thumbnails-text-style">Academind</span>
-            <span class="thumbnails-text-style">1 M views * 1 year ago</span> <!--Quantity of views and how long ago is this video here-->
-          </div>
-        </div>
-        <div class="thumbnail-container"> <!--Thumbnails videos-->
-          <img class="thumb-video-img" alt="Playlist thumbnail" src="https://i.ytimg.com/vi/qz9tKlF431k/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBZiywZt-kXuOT7Qd7W-QPMgPVjnw">
-          <div class="thumb-description-container">
-            <span class="thumb-vid-title">Flutter Tutorials for beginners - Building iOS and Android...</span>
-            <span class="thumbnails-text-style">Academind</span>
-            <span class="thumbnails-text-style">1 M views * 1 year ago</span> <!--Quantity of views and how long ago is this video here-->
-          </div>
-        </div>
-        <div class="thumbnail-container"> <!--Thumbnails videos-->
-          <img class="thumb-video-img" alt="Playlist thumbnail" src="https://i.ytimg.com/vi/xvqsFTUsOmc/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCzuXE_XkM3wFVN6aIiweSvJlSi-A">
-          <div class="thumb-description-container">
-            <span class="thumb-vid-title">Flutter Tutorials for beginners - Building iOS and Android...</span>
-            <span class="thumbnails-text-style">Academind</span>
-            <span class="thumbnails-text-style">1 M views * 1 year ago</span> <!--Quantity of views and how long ago is this video here-->
-          </div>
-        </div>
-        <div class="thumbnail-container"> <!--Thumbnails videos-->
-          <img class="thumb-video-img" alt="Playlist thumbnail" src="https://i.ytimg.com/vi/dSl_qnWO104/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLD4Fa0cYcyAtnQuf9aWV7YjB3GWbw">
-          <div class="thumb-description-container">
-            <span class="thumb-vid-title">Flutter Tutorials for beginners - Building iOS and Android...</span>
-            <span class="thumbnails-text-style">Academind</span>
-            <span class="thumbnails-text-style">1 M views * 1 year ago</span> <!--Quantity of views and how long ago is this video here-->
-          </div>
-        </div>
-        <div class="thumbnail-container"> <!--Thumbnails videos-->
-          <img class="thumb-video-img" alt="Playlist thumbnail" src="https://i.ytimg.com/vi/7YcW25PHnAA/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDo4h0d81yeN9dRpDdvWrv7g8k5wQ">
-          <div class="thumb-description-container">
-            <span class="thumb-vid-title">Flutter Tutorials for beginners - Building iOS and Android...</span>
-            <span class="thumbnails-text-style">Academind</span>
-            <span class="thumbnails-text-style">1 M views * 1 year ago</span> <!--Quantity of views and how long ago is this video here-->
-          </div>
-        </div>
-        <div class="thumbnail-container"> <!--Thumbnails videos-->
-          <img class="thumb-video-img" alt="Playlist thumbnail" src="https://i.ytimg.com/vi/VuN8qwZoego/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLB430mHoAktFt0bqTkRUOvd7GqfiQ">
-          <div class="thumb-description-container">
-            <span class="thumb-vid-title">Flutter Tutorials for beginners - Building iOS and Android...</span>
-            <span class="thumbnails-text-style">Academind</span>
-            <span class="thumbnails-text-style">1 M views * 1 year ago</span> <!--Quantity of views and how long ago is this video here-->
-          </div>
-        </div>
-        <div class="thumbnail-container"> <!--Thumbnails videos-->
-          <img class="thumb-video-img" alt="Playlist thumbnail" src="https://i.ytimg.com/vi/VuN8qwZoego/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLB430mHoAktFt0bqTkRUOvd7GqfiQ">
-          <div class="thumb-description-container">
-            <span class="thumb-vid-title">Flutter Tutorials for beginners - Building iOS and Android...</span>
-            <span class="thumbnails-text-style">Academind</span>
-            <span class="thumbnails-text-style">1 M views * 1 year ago</span> <!--Quantity of views and how long ago is this video here-->
-          </div>
-        </div>
-        <div class="thumbnail-container"> <!--Thumbnails videos-->
-          <img class="thumb-video-img" alt="Playlist thumbnail" src="https://i.ytimg.com/vi/NtzZBTjKngw/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCxMeRCDU9Gs4J3FNUzNTL2-vKjHg">
-          <div class="thumb-description-container">
-            <span class="thumb-vid-title">Flutter Tutorials for beginners - Building iOS and Android...</span>
-            <span class="thumbnails-text-style">Academind</span>
-            <span class="thumbnails-text-style">1 M views * 1 year ago</span> <!--Quantity of views and how long ago is this video here-->
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-</body>
+    </main>
+  </body>
 </html>
-
-
-
-

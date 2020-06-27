@@ -12,6 +12,10 @@
   z-index: 5;
 }
 
+main {
+  margin-top: 56px;
+}
+
 .navstyle {
   display: flex;
   flex-direction: row;
@@ -117,11 +121,7 @@ img,
 }
 
 /*Styling the main content (columns)*/
-#main {
-  margin-top: 56px;
-}
-
-#columns {
+.columns {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -130,7 +130,7 @@ img,
 }
 
 /*Styling the user-column*/
-#user-column {
+.user-column {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -161,13 +161,13 @@ img,
 }
 
 /*Styling info division*/
-#info {
+.info {
   padding-bottom: 13px;
   width: 100%;
 }
 
 /*Styling info-icons*/
-#info-icons {
+.info-icons {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -176,7 +176,7 @@ img,
 }
 
 /*Styling icons-left*/
-#icons-right {
+.icons-right {
   position: relative;
   top: 4px;
   display: flex;
@@ -213,7 +213,7 @@ img,
 }
 
 /*Styling the video title*/
-#video-title {
+.video-title {
   font-size: 1.5em;
   font-weight: lighter;
 }
@@ -413,23 +413,22 @@ img,
 }
 
 /*/////////////////Styling the List column////////////////////*/
-#playlist {
+.playlist {
   width: 25%;
-  height: 1000px;
   padding-top: 24px;
   padding-right: 24px;
   min-width: 426px;
   max-width: 226px;
 }
 
-#head {
+.head {
   display: flex;
   margin-bottom: 12px;
   flex-direction: row;
   align-items: center;
 }
 
-#upnext {
+.upnext {
   flex: 1 1 0%;
   color: #210303;
   font-weight: 500;
@@ -437,7 +436,7 @@ img,
   line-height: normal;
 }
 
-#autoplay {
+.autoplay {
   color: #210303;
   font-size: 0.8rem;
   font-weight: 500;
@@ -446,14 +445,14 @@ img,
   margin-right: 5px;
 }
 
-#toggleicon {
+.toggleicon {
   background-color: transparent;
   color: #e2e2e2;
   cursor: pointer;
 }
 
 /*/////Styling the comming up video/////*/
-#coming-next-video-container {
+.coming-next-video-container {
   display: flex;
   width: 394px;
   height: 94px;
@@ -465,7 +464,7 @@ img,
   border-bottom-color: black;
 }
 
-#next-video-img {
+.next-video-img {
   width: 168px;
   height: 94px;
 }
@@ -480,7 +479,7 @@ img,
   padding-left: 8px;
 }
 
-#next-vid-title {
+.next-vid-title {
   font-family: Arial;
   font-weight: 600;
   font-size: small;
