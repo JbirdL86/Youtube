@@ -23,7 +23,7 @@ main {
 }
 
 /*Styling left side of the navigation bar*/
-#menu {
+.menu {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -45,7 +45,7 @@ main {
   cursor: pointer;
 }
 
-#youtube {
+.youtube {
   font-weight: 600;
   font-size: 28px;
   font-family: Arial;
@@ -63,7 +63,7 @@ main {
   background-color: transparent;
 }
 
-#searchcont {
+.searchcont {
   margin-left: 40px;
   border-color: #cccccc;
   border-radius: 2%;
@@ -73,7 +73,7 @@ main {
   position: relative;
 }
 
-#searchbox {
+.searchbox {
   max-width: 728px;
   height: 32px;
   width: 575px;
@@ -84,7 +84,7 @@ main {
   border-bottom: 0;
 }
 
-#searchbutton {
+.searchbutton {
   width: 65px;
   height: 32px;
   cursor: pointer;
@@ -101,18 +101,16 @@ main {
   margin-right: 30px;
 }
 
-#icons {
+.icons {
   justify-content: space-between;
   width: 90%;
 }
 
-#icons i,
-img,
-#icons-right div {
+.icons i,img, .icons-right div {
   cursor: pointer;
 }
 
-#userimg {
+.userimg {
   width: 36px;
   height: 36px;
   border-radius: 50%;
