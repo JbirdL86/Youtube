@@ -1,0 +1,538 @@
+/*Adding style to the navbar container*/
+
+#navbar {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 56px;
+  padding: 0 16px 0 16px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  z-index: 5;
+}
+
+main {
+  margin-top: 56px;
+}
+
+.navstyle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*Styling left side of the navigation bar*/
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+  width: 60%;
+}
+
+.menu-bars {
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  margin: 5px 0;
+}
+
+.fa-youtube {
+  width: 100%;
+  color: red;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.youtube {
+  font-weight: 600;
+  font-size: 28px;
+  font-family: Arial;
+  margin-left: 2px;
+  letter-spacing: -5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/*Styling center of navigation bar*/
+#center {
+  height: 36px;
+  padding: 0;
+  align-items: center;
+  background-color: transparent;
+}
+
+.searchcont {
+  margin-left: 40px;
+  border-color: #cccccc;
+  border-radius: 2%;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  position: relative;
+}
+
+.searchbox {
+  max-width: 728px;
+  height: 32px;
+  width: 575px;
+  background-color: transparent;
+  border-right: 1px solid #cccccc;
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+.searchbutton {
+  width: 65px;
+  height: 32px;
+  cursor: pointer;
+  background-color: #f8f8f8;
+  border: 0;
+}
+
+/*Styling the right side of the navbar*/
+
+#right {
+  height: 36px;
+  min-width: 225px;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.icons {
+  justify-content: space-between;
+  width: 90%;
+}
+
+.icons i,img, .icons-right div {
+  cursor: pointer;
+}
+
+.userimg {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*Styling the main content (columns)*/
+.columns {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  max-width: 1754px;
+}
+
+/*Styling the user-column*/
+.user-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-width: 450px;
+  max-width: 1280px;
+  padding-top: 24px;
+  padding-right: 24px;
+  margin-left: 24px;
+}
+
+/*Styling player division*/
+#player {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+#video-player {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*Styling info division*/
+.info {
+  padding-bottom: 13px;
+  width: 100%;
+}
+
+/*Styling info-icons*/
+.info-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+}
+
+/*Styling icons-left*/
+.icons-right {
+  position: relative;
+  top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-container {
+  padding-right: 8px;
+  margin-left: 8px;
+}
+
+#dot-icon {
+  outline: none;
+  background: none;
+  border: none;
+  line-height: 0;
+  cursor: pointer;
+}
+
+/*Text style*/
+.text-style {
+  font-family: Arial;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-style {
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+}
+
+/*Styling the video title*/
+.video-title {
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+/*Making the info division icons look gray*/
+#info i {
+  color: gray;
+}
+
+/*Giving a more specific gray to the add list icon in the info division*/
+.add-list-color {
+  color: #d1cccc;
+}
+
+/*Styling description division*/
+#video-description {
+  display: flex;
+  flex-direction: column;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: black;
+}
+
+/*Styling channel information container*/
+#channel-container {
+  display: flex;
+  background-color: transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Styling owner profile container*/
+#owner-profile {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  align-items: center;
+  cursor: pointer;
+}
+
+#owner-info {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/*Styling the name of the video owner*/
+#owner-name {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+/*Styling the number of subscribers text*/
+#num-subscribers {
+  font-family: Arial;
+  font-weight: 300;
+  font-size: 15px;
+  color: rgb(59, 59, 59);
+}
+
+/*Styling the subscribe button*/
+#subscribe-container {
+  display: flex;
+  background-color: #c00;
+  cursor: pointer;
+}
+
+#subscribe-text {
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 550;
+  color: white;
+  margin: 10px 14px 10px 14px;
+}
+
+/*Styling description text*/
+#description-text {
+  margin-left: 70px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+/*Styling show less*/
+#show-less {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.007px;
+  text-transform: uppercase;
+  color: dimgray;
+  margin-left: 70px;
+  margin-bottom: 8px;
+}
+
+/*Styling comments division*/
+#comments {
+  display: inline-block;
+  margin-left: 24px;
+  margin-right: 24px;
+  width: 100%;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: black;
+}
+
+/*///////////////STYLING THE COMMENT CONTAINERS////////////*/
+.user-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+/*Styling user images of the comment division*/
+.user-img-background {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+/*user colors*/
+.color-a {
+  background-color: red;
+  cursor: pointer;
+}
+
+.user-text {
+  font-family: arial;
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+}
+
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+  width: 100%;
+}
+
+.name-and-time {
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+.comment-icons {
+  display: inline-flex;
+  width: 150px;
+  height: 19px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-name {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.time {
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 8px;
+  color: dimgray;
+}
+
+.comment {
+  font-family: Arial;
+  font-size: 16px;
+  margin-block-start: 0;
+}
+
+.comment-icons i {
+  color: rgb(59, 59, 59);
+  cursor: pointer;
+}
+
+.comment-icons-text {
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 670;
+  color: rgb(59, 59, 59);
+}
+
+.reply {
+  margin-left: 18px;
+  cursor: pointer;
+}
+
+/*/////////////////Styling the List column////////////////////*/
+.playlist {
+  width: 25%;
+  padding-top: 24px;
+  padding-right: 24px;
+  min-width: 426px;
+  max-width: 226px;
+}
+
+.head {
+  display: flex;
+  margin-bottom: 12px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.upnext {
+  flex: 1 1 0%;
+  color: #210303;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.autoplay {
+  color: #210303;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.007px;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
+
+.toggleicon {
+  background-color: transparent;
+  color: #e2e2e2;
+  cursor: pointer;
+}
+
+/*/////Styling the comming up video/////*/
+.coming-next-video-container {
+  display: flex;
+  width: 394px;
+  height: 94px;
+  /* background-color: cornflowerblue;*/
+  padding-bottom: 14px;
+  margin-bottom: 14px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: black;
+}
+
+.next-video-img {
+  width: 168px;
+  height: 94px;
+}
+
+/*Styling description container of the coming next video*/
+#thumb-description-container {
+  display: inline-flex;
+  flex-direction: column;
+  width: 226px;
+  height: 94px;
+  /*background-color: aliceblue;*/
+  padding-left: 8px;
+}
+
+.next-vid-title {
+  font-family: Arial;
+  font-weight: 600;
+  font-size: small;
+  margin-bottom: 6px;
+}
+
+.thumbnails-text-style {
+  font-family: Arial;
+  font-size: 12.6px;
+  font-weight: 545;
+  margin-bottom: 4px;
+  color: rgb(96, 96, 96);
+}
+
+/*Styling thumbnails list*/
+.thumbnail-container {
+  display: flex;
+  width: 394px;
+  height: 94px;
+  /*background-color: #d1cccc;*/
+  margin-bottom: 6px;
+}
+
+.thumb-video-img {
+  width: 168px;
+  height: 94px;
+}
+
+.thumb-description-container {
+  display: inline-flex;
+  flex-direction: column;
+  width: 226px;
+  height: 94px;
+  /*background-color: aliceblue; */
+  padding-left: 8px;
+}
+
+.thumb-vid-title {
+  font-family: Arial;
+  font-weight: 600;
+  font-size: small;
+  margin-bottom: 6px;
+}
+
+.thumbnails-text-style {
+  font-family: Arial;
+  font-size: 12.6px;
+  font-weight: 545;
+  margin-bottom: 4px;
+  color: rgb(96, 96, 96);
+}
+/*Styling the main block (body)*/
+body {
+  margin: 0;
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 1000px;
+}
